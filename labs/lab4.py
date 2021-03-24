@@ -128,3 +128,51 @@ print(ciag.pobierz_parametry())
 print(ciag.policz_elementy())
 print(ciag.policz_sume())
 """
+
+"""
+Zad6
+
+class Robaczek:
+    def __init__(self, x, y, krok):
+        self.x = x
+        self.y = y
+        self.krok = krok
+
+    def idz_w_gore(self, ile):
+        y = int(self.y)
+        krok = int(self.krok)
+        y += (krok*ile)
+        self.y = y
+
+    def idz_w_dol(self, ile):
+        y = int(self.y)
+        krok = int(self.krok)
+        y -= (krok * ile)
+        self.y = y
+
+    def idz_w_lewo(self, ile):
+        x = int(self.x)
+        krok = int(self.krok)
+        x -= (krok * ile)
+        self.x = x
+
+    def idz_w_prawo(self, ile):
+        x = int(self.x)
+        krok = int(self.krok)
+        x += (krok * ile)
+        self.x = x
+
+    def pokaz_gdzie_jestes(self):
+        print("X: " + str(self.x) + " Y: " + str(self.y))
+
+x = input("Podaj współrzędną X.")
+y = input("Podaj współrzędną Y.")
+krok = input("Podaj krok Robaczka.")
+obiekt = Robaczek(x, y, krok)
+
+obiekt.idz_w_gore(4)
+obiekt.idz_w_dol(4)
+obiekt.idz_w_lewo(0)
+obiekt.idz_w_prawo(4)
+print(obiekt.pokaz_gdzie_jestes())
+"""
